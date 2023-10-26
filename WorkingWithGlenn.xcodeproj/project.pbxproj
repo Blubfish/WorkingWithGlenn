@@ -42,6 +42,7 @@
 		F411AC372AE81FF5001AC08B /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC362AE81FF5001AC08B /* FirebaseRemoteConfigSwift */; };
 		F411AC392AE81FF5001AC08B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC382AE81FF5001AC08B /* FirebaseStorage */; };
 		F411AC3B2AE81FF5001AC08B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC3A2AE81FF5001AC08B /* FirebaseStorageCombine-Community */; };
+		F411AC3D2AE82278001AC08B /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411AC3C2AE82278001AC08B /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		F411ABF42AE818E7001AC08B /* WorkingWithGlennUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennUITests.swift; sourceTree = "<group>"; };
 		F411ABF62AE818E7001AC08B /* WorkingWithGlennUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F411AC032AE81E97001AC08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F411AC3C2AE82278001AC08B /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		F411ABD82AE818E6001AC08B /* WorkingWithGlenn */ = {
 			isa = PBXGroup;
 			children = (
+				F411AC3C2AE82278001AC08B /* Food.swift */,
 				F411ABD92AE818E6001AC08B /* WorkingWithGlennApp.swift */,
 				F411ABDB2AE818E6001AC08B /* ContentView.swift */,
 				F411ABDD2AE818E7001AC08B /* Assets.xcassets */,
@@ -349,6 +352,7 @@
 			files = (
 				F411ABDC2AE818E6001AC08B /* ContentView.swift in Sources */,
 				F411ABDA2AE818E6001AC08B /* WorkingWithGlennApp.swift in Sources */,
+				F411AC3D2AE82278001AC08B /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
