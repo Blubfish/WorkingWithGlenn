@@ -15,7 +15,8 @@ struct WorkingWithGlennApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+         ContentView()
+            
         }
     }
 }
