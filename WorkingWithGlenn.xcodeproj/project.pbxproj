@@ -14,7 +14,6 @@
 		F411ABEB2AE818E7001AC08B /* WorkingWithGlennTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABEA2AE818E7001AC08B /* WorkingWithGlennTests.swift */; };
 		F411ABF52AE818E7001AC08B /* WorkingWithGlennUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABF42AE818E7001AC08B /* WorkingWithGlennUITests.swift */; };
 		F411ABF72AE818E7001AC08B /* WorkingWithGlennUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABF62AE818E7001AC08B /* WorkingWithGlennUITestsLaunchTests.swift */; };
-		F411AC042AE81E97001AC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F411AC032AE81E97001AC08B /* GoogleService-Info.plist */; };
 		F411AC072AE81FF5001AC08B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC062AE81FF5001AC08B /* FirebaseAnalytics */; };
 		F411AC092AE81FF5001AC08B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC082AE81FF5001AC08B /* FirebaseAnalyticsOnDeviceConversion */; };
 		F411AC0B2AE81FF5001AC08B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC0A2AE81FF5001AC08B /* FirebaseAnalyticsSwift */; };
@@ -42,7 +41,11 @@
 		F411AC372AE81FF5001AC08B /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC362AE81FF5001AC08B /* FirebaseRemoteConfigSwift */; };
 		F411AC392AE81FF5001AC08B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC382AE81FF5001AC08B /* FirebaseStorage */; };
 		F411AC3B2AE81FF5001AC08B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F411AC3A2AE81FF5001AC08B /* FirebaseStorageCombine-Community */; };
-		F411AC3D2AE82278001AC08B /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411AC3C2AE82278001AC08B /* Food.swift */; };
+		F411AC3D2AE82278001AC08B /* FoodRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411AC3C2AE82278001AC08B /* FoodRating.swift */; };
+		F43223192AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
+		F432231A2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
+		F432231B2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
+		F4810F782AEABF5A00E5EBF6 /* getdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4810F772AEABF5A00E5EBF6 /* getdata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +76,9 @@
 		F411ABF02AE818E7001AC08B /* WorkingWithGlennUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkingWithGlennUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F411ABF42AE818E7001AC08B /* WorkingWithGlennUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennUITests.swift; sourceTree = "<group>"; };
 		F411ABF62AE818E7001AC08B /* WorkingWithGlennUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F411AC032AE81E97001AC08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F411AC3C2AE82278001AC08B /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F411AC3C2AE82278001AC08B /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
+		F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4810F772AEABF5A00E5EBF6 /* getdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getdata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +156,12 @@
 		F411ABD82AE818E6001AC08B /* WorkingWithGlenn */ = {
 			isa = PBXGroup;
 			children = (
-				F411AC3C2AE82278001AC08B /* Food.swift */,
+				F411AC3C2AE82278001AC08B /* FoodRating.swift */,
 				F411ABD92AE818E6001AC08B /* WorkingWithGlennApp.swift */,
 				F411ABDB2AE818E6001AC08B /* ContentView.swift */,
+				F4810F772AEABF5A00E5EBF6 /* getdata.swift */,
+				F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */,
 				F411ABDD2AE818E7001AC08B /* Assets.xcassets */,
-				F411AC032AE81E97001AC08B /* GoogleService-Info.plist */,
 				F411ABDF2AE818E7001AC08B /* Preview Content */,
 			);
 			path = WorkingWithGlenn;
@@ -324,8 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F411ABE12AE818E7001AC08B /* Preview Assets.xcassets in Resources */,
+				F43223192AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */,
 				F411ABDE2AE818E7001AC08B /* Assets.xcassets in Resources */,
-				F411AC042AE81E97001AC08B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F432231A2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F432231B2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +359,8 @@
 			files = (
 				F411ABDC2AE818E6001AC08B /* ContentView.swift in Sources */,
 				F411ABDA2AE818E6001AC08B /* WorkingWithGlennApp.swift in Sources */,
-				F411AC3D2AE82278001AC08B /* Food.swift in Sources */,
+				F4810F782AEABF5A00E5EBF6 /* getdata.swift in Sources */,
+				F411AC3D2AE82278001AC08B /* FoodRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
