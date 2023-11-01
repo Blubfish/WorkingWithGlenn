@@ -5,38 +5,59 @@
 //  Created by Gia Bao Ta on 10/24/23.
 //
 
-import Foundation
+
+
 import SwiftUI
+import Firebase
 
 
 struct ContentView: View {
-    @State private var foodName: String = ""
-    @State private var rating: Double = 5
+    @ObservedObject var viewModel = ViewModel()
+
     var body: some View {
         NavigationView {
-            Form {
-                Section {
-                    TextField("Food Name", text: $foodName)
+            List(viewModel.list) { d in
+                HStack{
+                    Text(d.name)
+                    Spacer()
+                    Text(String(d.rating))
                 }
-                Section {
-                    HStack {
-                        Text("Rating:")
-                        Spacer()
-                        Stepper(value: $rating, in: 1...10, step: 1) {
-                            Text("\(Int(rating))")
+                }
+                .onAppear() {
+                    viewModel.getdata()
+            }
+        }
+    }
+
+    
+    struct Content_perview: View{
+        @State private var foodName: String = ""
+        @State private var rating: Double = 5
+        var body: some View {
+            
+            NavigationView {
+                
+                Form{
+                    Section {
+                        TextField("Food Name", text: $foodName)
+                    }
+                    Section {
+                        HStack {
+                            Text("Rating:")
+                            Spacer()
+                            Stepper(value: $rating, in: 1...10, step: 1) {
+                                Text("\(Int(rating))")
+                            }
                         }
                     }
+                    
+                    
                 }
-                Section {
-                    Button(action: {
-                        print("Food Name: \(foodName)")
-                        print("Rating: \(rating)")
-                    }) {
-                        Text("Submit")
-                    }
-                }
+                
+                .navigationBarTitle("Food Rating")
+                
             }
-            .navigationBarTitle("Food Rating")
         }
+        
     }
 }
