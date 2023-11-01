@@ -22,9 +22,9 @@ struct ContentView: View {
                     Spacer()
                     Text(String(d.rating))
                 }
-                }
+            }
                 .onAppear() {
-                    viewModel.getdata()
+                    self.viewModel.getdata()
             }
         }
     }

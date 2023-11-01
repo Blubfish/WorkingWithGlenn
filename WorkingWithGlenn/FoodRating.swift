@@ -2,7 +2,7 @@ import Foundation
 
 struct FoodRating: Identifiable {
     var id = String()
-    var rating = Int()
+    var rating = Double()
     var name = String()
     
 }

@@ -20,12 +20,13 @@ class ViewModel: ObservableObject {
             }
             self.list = documents.map { d -> FoodRating in
                 let data = d.data()
-                let rating = data["rating"] as? Int ?? 0
+                let id = d.documentID
+                let rating = data["rating"] as? Double ?? 0.0
                 print(rating)
                 let name = data["name"] as? String ?? ""
                 print(name)
 
-                return FoodRating(id: .init(),rating: rating, name: name)                 }
+                return FoodRating(id: id ,rating: rating, name: name)                 }
         }
     }
 }
