@@ -45,7 +45,7 @@
 		F43223192AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
 		F432231A2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
 		F432231B2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
-		F4810F782AEABF5A00E5EBF6 /* getdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4810F772AEABF5A00E5EBF6 /* getdata.swift */; };
+		F4810F782AEABF5A00E5EBF6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4810F772AEABF5A00E5EBF6 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		F411ABF62AE818E7001AC08B /* WorkingWithGlennUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F411AC3C2AE82278001AC08B /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
 		F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F4810F772AEABF5A00E5EBF6 /* getdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getdata.swift; sourceTree = "<group>"; };
+		F4810F772AEABF5A00E5EBF6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				F411AC3C2AE82278001AC08B /* FoodRating.swift */,
 				F411ABD92AE818E6001AC08B /* WorkingWithGlennApp.swift */,
 				F411ABDB2AE818E6001AC08B /* ContentView.swift */,
-				F4810F772AEABF5A00E5EBF6 /* getdata.swift */,
+				F4810F772AEABF5A00E5EBF6 /* ViewModel.swift */,
 				F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */,
 				F411ABDD2AE818E7001AC08B /* Assets.xcassets */,
 				F411ABDF2AE818E7001AC08B /* Preview Content */,
@@ -359,7 +359,7 @@
 			files = (
 				F411ABDC2AE818E6001AC08B /* ContentView.swift in Sources */,
 				F411ABDA2AE818E6001AC08B /* WorkingWithGlennApp.swift in Sources */,
-				F4810F782AEABF5A00E5EBF6 /* getdata.swift in Sources */,
+				F4810F782AEABF5A00E5EBF6 /* ViewModel.swift in Sources */,
 				F411AC3D2AE82278001AC08B /* FoodRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
