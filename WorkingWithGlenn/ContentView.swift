@@ -29,7 +29,14 @@ struct ContentView: View {
             TextField("rating", text: $rating)
             HStack{
                 Button {
-                    viewModel.addData(name: name, rating: Double(rating) ?? 0.0)
+                    if name != "" && rating != ""{
+                        viewModel.addData(name: name, rating: Double(rating) ?? 0.0)
+                        name = ""
+                        rating = ""
+                    }
+                    else{
+                        return
+                    }
                 } label: {
                     Text("Save")
                         .foregroundColor(.white)
@@ -44,32 +51,4 @@ struct ContentView: View {
             }
         }
     }
-    
-    
-    struct Content_perview: View{
-        @State private var foodName: String = ""
-        @State private var rating: Double = 5
-        var body: some View {
-            NavigationView {
-                
-                
-                Section {
-                    HStack {
-                        Text("Rating:")
-                        Spacer()
-                        Stepper(value: $rating, in: 1...10, step: 1) {
-                            Text("\(Int(rating))")
-                        }
-                    }
-                }
-                
-                
-            }
-            
-            .navigationBarTitle("Food Rating")
-            
-        }
-    }
-    
 }
-
