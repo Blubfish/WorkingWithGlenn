@@ -25,6 +25,8 @@ class ViewModel: ObservableObject {
             }
         }
     }
+    
+    
     func deleteData(foodRatingDelete: FoodRating){
         db.collection("FoodList").document(foodRatingDelete.id).delete() { err in
             if let err = err {
@@ -36,9 +38,7 @@ class ViewModel: ObservableObject {
         }
     }
     
-    
     func getData() {
-        
         db.collection("FoodList").addSnapshotListener { (snapshot, error) in
             guard let documents = snapshot?.documents else {
                 print("No documents")

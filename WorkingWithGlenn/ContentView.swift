@@ -8,22 +8,23 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            List(viewModel.list) { d in
-                HStack{
-                    Text(d.name)
-                    Spacer()
-                    Text(String(d.rating))
+            List{
+                ForEach(viewModel.list) { d in
+                    HStack{
+                        Text("\(d.name):")
+                        Text("\(String(d.rating))/10")
+                        Spacer()
+                        Button {
+                            viewModel.deleteData(foodRatingDelete: d)
+                        } label: {
+                            Text("Delete")
+                                .frame(width: .infinity, height: 30, alignment: .center)
+                                .foregroundColor(.white)
+                                .background(.red)
+                                .cornerRadius(10)
+                        }
+                    }
                 }
-                Button {
-                    viewModel.deleteData(foodRatingDelete: d)
-                } label: {
-                    Text("Delete \(d.name)")
-                        .frame(width: .infinity, height: 30, alignment: .center)
-                        .foregroundColor(.white)
-                        .background(.red)
-                        .cornerRadius(10)
-                }
-                
             }
             TextField("name", text: $name)
             TextField("rating", text: $rating)
