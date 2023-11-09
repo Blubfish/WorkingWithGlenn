@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F411ABDA2AE818E6001AC08B /* WorkingWithGlennApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABD92AE818E6001AC08B /* WorkingWithGlennApp.swift */; };
-		F411ABDC2AE818E6001AC08B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABDB2AE818E6001AC08B /* ContentView.swift */; };
+		F411ABDC2AE818E6001AC08B /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABDB2AE818E6001AC08B /* Ratings.swift */; };
 		F411ABDE2AE818E7001AC08B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F411ABDD2AE818E7001AC08B /* Assets.xcassets */; };
 		F411ABE12AE818E7001AC08B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F411ABE02AE818E7001AC08B /* Preview Assets.xcassets */; };
 		F411ABEB2AE818E7001AC08B /* WorkingWithGlennTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411ABEA2AE818E7001AC08B /* WorkingWithGlennTests.swift */; };
@@ -45,7 +45,7 @@
 		F43223192AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
 		F432231A2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
 		F432231B2AF2A3FC00CA7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */; };
-		F4810F782AEABF5A00E5EBF6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4810F772AEABF5A00E5EBF6 /* ViewModel.swift */; };
+		F4810F782AEABF5A00E5EBF6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4810F772AEABF5A00E5EBF6 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 /* Begin PBXFileReference section */
 		F411ABD62AE818E6001AC08B /* WorkingWithGlenn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkingWithGlenn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F411ABD92AE818E6001AC08B /* WorkingWithGlennApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennApp.swift; sourceTree = "<group>"; };
-		F411ABDB2AE818E6001AC08B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F411ABDB2AE818E6001AC08B /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
 		F411ABDD2AE818E7001AC08B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F411ABE02AE818E7001AC08B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F411ABE62AE818E7001AC08B /* WorkingWithGlennTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkingWithGlennTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,7 +78,7 @@
 		F411ABF62AE818E7001AC08B /* WorkingWithGlennUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingWithGlennUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F411AC3C2AE82278001AC08B /* FoodRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRating.swift; sourceTree = "<group>"; };
 		F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F4810F772AEABF5A00E5EBF6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F4810F772AEABF5A00E5EBF6 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +158,8 @@
 			children = (
 				F411AC3C2AE82278001AC08B /* FoodRating.swift */,
 				F411ABD92AE818E6001AC08B /* WorkingWithGlennApp.swift */,
-				F411ABDB2AE818E6001AC08B /* ContentView.swift */,
-				F4810F772AEABF5A00E5EBF6 /* ViewModel.swift */,
+				F411ABDB2AE818E6001AC08B /* Ratings.swift */,
+				F4810F772AEABF5A00E5EBF6 /* Database.swift */,
 				F43223182AF2A3FC00CA7B2D /* GoogleService-Info.plist */,
 				F411ABDD2AE818E7001AC08B /* Assets.xcassets */,
 				F411ABDF2AE818E7001AC08B /* Preview Content */,
@@ -357,9 +357,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F411ABDC2AE818E6001AC08B /* ContentView.swift in Sources */,
+				F411ABDC2AE818E6001AC08B /* Ratings.swift in Sources */,
 				F411ABDA2AE818E6001AC08B /* WorkingWithGlennApp.swift in Sources */,
-				F4810F782AEABF5A00E5EBF6 /* ViewModel.swift in Sources */,
+				F4810F782AEABF5A00E5EBF6 /* Database.swift in Sources */,
 				F411AC3D2AE82278001AC08B /* FoodRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

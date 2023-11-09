@@ -1,7 +1,7 @@
 import SwiftUI
 import Firebase
-@main
 
+@main
 struct WorkingWithGlennApp: App {
     init() {
         FirebaseApp.configure()
@@ -9,7 +9,7 @@ struct WorkingWithGlennApp: App {
     @State var switchScreen = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Ratings()
         }
     }
 }

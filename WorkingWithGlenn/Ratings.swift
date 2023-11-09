@@ -1,23 +1,23 @@
 import SwiftUI
 import Firebase
 
-struct ContentView: View {
-    @ObservedObject var viewModel = ViewModel()
+struct Ratings: View {
+    @ObservedObject var database = Database()
     @State var name: String = ""
     @State var rating: String = ""
     
     var body: some View {
         VStack{
             List{
-                ForEach(viewModel.list) { d in
+                ForEach(database.list) { data in
                     HStack{
-                        Text("\(d.name):")
-                        Text("\(String(d.rating))/10")
+                        Text("\(data.name):")
+                        Text("\(String(data.rating))/10")
                         Spacer()
                         
                         Button(action: {
                             if name != "" && rating != ""{
-                                viewModel.updateData(FoodListUpdate: d, name: name, rating: Double(rating) ?? 0.0)
+                                database.updateData(FoodListUpdate: data, name: name, rating: Double(rating) ?? 0.0)
                                 name = ""
                                 rating = ""
                             }
@@ -26,9 +26,8 @@ struct ContentView: View {
                         })
                         .buttonStyle(BorderlessButtonStyle())
                         
-                        
                         Button(action: {
-                            viewModel.deleteData(foodRatingDelete: d)
+                            database.deleteData(foodRatingDelete: data)
                         }, label: {
                             Image(systemName: "trash")
                                 .foregroundColor(.red)
@@ -43,7 +42,7 @@ struct ContentView: View {
                 VStack{
                     Button {
                         if name != "" && rating != ""{
-                            viewModel.addData(name: name, rating: Double(rating) ?? 0.0)
+                            database.addData(name: name, rating: Double(rating) ?? 0.0)
                             name = ""
                             rating = ""
                         }
@@ -58,8 +57,7 @@ struct ContentView: View {
                             .cornerRadius(20)
                     }
                     .onAppear() {
-                        self.viewModel.getData()
-                        
+                        self.database.getData()
                     }
                 }
             }

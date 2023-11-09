@@ -1,19 +1,10 @@
-//
-//  getdata.swift
-//  WorkingWithGlenn
-//
-//  Created by Gia Bao Ta on 10/26/23.
-//
-import Foundation
 import FirebaseFirestore
 
-class ViewModel: ObservableObject {
+class Database: ObservableObject {
     @Published var list = [FoodRating]()
     private var db = Firestore.firestore()
     
-    
     func addData(name: String, rating: Double) {
-        
         let db = Firestore.firestore()
         db.collection("FoodList").addDocument(data: ["name":name, "rating":rating]) { error in
             if error == nil {
@@ -27,11 +18,7 @@ class ViewModel: ObservableObject {
     }
     
     func updateData(FoodListUpdate: FoodRating, name: String, rating: Double) {
-        
-        // Get a reference to the database
         let db = Firestore.firestore()
-        
-        // Set the data to update
         db.collection("FoodList").document(FoodListUpdate.id).setData(["name":name], merge: true) { error in
             db.collection("FoodList").document(FoodListUpdate.id).setData(["rating":rating], merge: true) { error in
                 if error == nil{
@@ -40,7 +27,6 @@ class ViewModel: ObservableObject {
             }
         }
     }
-    
     
     func deleteData(foodRatingDelete: FoodRating){
         db.collection("FoodList").document(foodRatingDelete.id).delete() { err in
