@@ -26,6 +26,21 @@ class ViewModel: ObservableObject {
         }
     }
     
+    func updateData(FoodListUpdate: FoodRating, name: String, rating: Double) {
+        
+        // Get a reference to the database
+        let db = Firestore.firestore()
+        
+        // Set the data to update
+        db.collection("FoodList").document(FoodListUpdate.id).setData(["name":name], merge: true) { error in
+            db.collection("FoodList").document(FoodListUpdate.id).setData(["rating":rating], merge: true) { error in
+                if error == nil{
+                    self.getData()
+                }
+            }
+        }
+    }
+    
     
     func deleteData(foodRatingDelete: FoodRating){
         db.collection("FoodList").document(foodRatingDelete.id).delete() { err in
