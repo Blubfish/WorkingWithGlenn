@@ -7,6 +7,32 @@ struct Ratings: View {
     @State var rating: String = ""
     
     var body: some View {
+        VStack {
+            Text("Food Rater")
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+        }
+        HStack{
+            Image("food1")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+            Image("food2")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+            Image("food3")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+            Image("food4")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+            
+               
+        }
+        
         VStack{
             List{
                 ForEach(database.list) { data in
